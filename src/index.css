@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  transition: all ease-in-out 0.2s;
+}
+
+input[type="checkbox"]:checked + label span:first-of-type {
+  background-color: #10b981;
+  border-color: #10b981;
+  color: #fff;
+}
+
+input[type="checkbox"]:checked + label span:nth-of-type(2) {
+  text-decoration: line-through;
+  color: #9ca3af;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+html::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+html {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
